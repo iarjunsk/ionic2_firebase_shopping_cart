@@ -1,26 +1,26 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Ionic2 Firebase Shopping Cart
 
-## How to use this template
+### Instructions
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+1. Create a firebase project.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+2. Enter the project credentials in this file.
 
-### With the Ionic CLI:
+3. Enable Email logging.
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+4. Import the data into database using this json.
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
+</a>
+
+5. Run the following the terminal
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTutorial tutorial
+$ cd ionic2_firebase_shopping_cart
+$ npm install 
+$ ionic serve
 ```
 
-Then, to run it, cd into `myTutorial` and run:
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
 

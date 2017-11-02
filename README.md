@@ -5,13 +5,13 @@
 
 1. Create a firebase project [here](https://console.firebase.google.com/).
 
-2. Enter the project credentials in [this file](/src/app/app.module.ts). [DEMO](/DEMO/demo_firebase_cred.png)
+2. Enter the project credentials in [this file](/src/app/app.module.ts). [__DEMO](/DEMO/demo_firebase_cred.png)
 
-3. Enable Email authentication. [DEMO](/DEMO/demo_email_auth.png)
+3. Enable Email authentication. [__DEMO](/DEMO/demo_email_auth.png)
 
-4. Import the data into database using [this json](/FIREBASE_DATA/dekene-export.json). [DEMO](/DEMO/demo_import_json.png)
+4. Import the data into database using [this json](/FIREBASE_DATA/dekene-export.json). [__DEMO](/DEMO/demo_import_json.png)
 
-5. Update Security rules to 
+5. Update Security rules to [__DEMO](/DEMO/demo_database_rules.png)
 ```bash
 {
   "rules": {

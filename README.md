@@ -45,5 +45,6 @@ $ ionic serve
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
 </a>
+
 ![FoodKart ](/DEMO/ionic2_shopping_cart.gif)
 

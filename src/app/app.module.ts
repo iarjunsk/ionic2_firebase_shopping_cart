@@ -48,7 +48,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp({         //<---- main module
+    AngularFireModule.initializeApp({         //<----ENTER FIREBASE CREDENTIAL HERE
       apiKey: "",
       authDomain: "",
       databaseURL: "",
@@ -56,8 +56,8 @@ import { AngularFireAuth } from 'angularfire2/auth';
       storageBucket: "",
       messagingSenderId: ""
     }),                                       
-    AngularFireDatabaseModule,                //<---- for database 
-    AngularFireAuthModule                     //<---- for auth
+    AngularFireDatabaseModule,                
+    AngularFireAuthModule                     
   ],
   bootstrap: [IonicApp],
   entryComponents: [

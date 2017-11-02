@@ -1,0 +1,52 @@
+<ion-header >
+
+  <ion-navbar color="dark">
+    <ion-title>
+        <ion-icon name="basket"></ion-icon> Cart</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-style">
+    
+        <ion-list>
+
+        <ion-item  *ngFor="let item of cart | async">
+            <ion-thumbnail item-left>            
+            <img src="{{item.image}}">
+            </ion-thumbnail>
+            <h2>{{item.name}}</h2>
+            <p>${{item.price}} x {{item.quantity}} = ${{item.price * item.quantity}}</p>
+            
+            <button ion-button clear item-right (click)="increment(item)" >
+              <ion-icon color="danger" style=" font-size: 25px;" name="ios-arrow-dropup-circle"></ion-icon>
+            </button>
+            
+            <button ion-button clear item-right (click)="decrement(item)" >
+              <ion-icon color="danger" style=" font-size: 25px;" name="ios-arrow-dropdown-circle"></ion-icon>
+            </button>
+            
+            <button style=" font-size: 20px;" ion-button clear item-right (click)="remove(item)" >
+              <ion-icon color="danger" name="ios-remove-circle"></ion-icon>
+            </button>
+        </ion-item>
+        
+        <ion-item *ngIf="(cart | async)?.length" >
+            <h2>Grand Total</h2> 
+            <h2 item-right >${{cartService.cartAmount}}</h2>
+        </ion-item>
+          
+        <ion-item *ngIf="!(cart | async)?.length" >
+          <h2 class="center">Cart is empty</h2>       
+        </ion-item>
+        
+        <button fixed ion-button icon-start block color="light" *ngIf="(cart | async)?.length" (click)="checkout()">
+            <ion-icon name="ios-cart"></ion-icon>
+            Checkout
+        </button>    
+
+        </ion-list>
+
+    
+    </ion-content>

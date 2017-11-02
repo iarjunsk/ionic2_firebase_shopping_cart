@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Forgot Password</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    
+    <ion-item>
+        <ion-input  [(ngModel)]="email" type="text" placeholder="Email" name="email"required></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="dark"  (click)="recover()"  block>Recover</button>
+  </div>
+
+</ion-content>

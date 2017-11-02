@@ -1,0 +1,35 @@
+{
+  "category" : {
+    "cat001" : "Grocery",
+    "cat002" : "Skincare"
+  },
+  "products" : {
+    "item1" : {
+      "available" : true,
+      "category" : "cat001",
+      "description" : "The pioneer of salt iodisation in India, Tata Salt, holds the distinction of being India's first national branded iodised salt. It has been consistently recognised as one of the country's leading food brands.",
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/51rya9i-ufL.jpg",
+      "name" : "Tata Salt, 1kg",
+      "price" : 15,
+      "stock" : 97
+    },
+    "item2" : {
+      "available" : true,
+      "category" : "cat001",
+      "description" : "Agro Fresh believes that our reputation must be based on the quality of our products. We have travelled across the country to handpick the finest quality products at the best possible rates. ",
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/91fxw8UaWPL._SL1500_.jpg",
+      "name" : "Agro Fresh Premium Sooji Rawa, 500g",
+      "price" : 20,
+      "stock" : 99
+    },
+    "item3" : {
+      "available" : true,
+      "category" : "cat002",
+      "description" : "Dettol Original Soap that comes with classic Dettol aroma affords you with Dettol’s trusted germ protection from a wide array of unseen germs. It efficiently cleanses and protects your skin, helping you stay healthy every day.",
+      "image" : "https://images-na.ssl-images-amazon.com/images/I/61tIX-YbEvL._SL1000_.jpg",
+      "name" : "Dettol Original Soap,BUY 3 GET 1 FREE Dettol Original Soap, 125g",
+      "price" : 132,
+      "stock" : 0
+    }
+  }
+}

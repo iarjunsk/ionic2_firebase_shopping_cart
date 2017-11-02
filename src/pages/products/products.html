@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <ion-icon name="basket"></ion-icon> 
+      Dekene
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-left (click)="openCart()">
+        <ion-icon name="cart"></ion-icon>
+        {{ (cartService.cartItems | async)?.length }} 
+
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  class="bg-style" >
+  
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="Search in Dekene"></ion-searchbar>
+
+
+  <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-select [(ngModel)]="category"  (ionChange)="applyCategoryFilter()" >
+      <ion-option value="all">All</ion-option>
+      <ion-option value="grocery">Grocery</ion-option>
+      <ion-option value="detergents">Detergents</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-list>
+
+    <ion-item *ngFor="let product of products | async">
+
+        <ion-thumbnail item-start (click)="showDetails(product)" >
+          <img src={{product.image}}>
+        </ion-thumbnail>
+
+
+        <ion-row>
+          <h2 (click)="showDetails(product)" >{{product.name}}</h2>
+        </ion-row>
+        <ion-row>
+            <p (click)="showDetails(product)"> <ion-badge color="light"> Rs {{product.price}} </ion-badge></p>
+        </ion-row>
+
+      
+        
+        <button ion-button clear item-end (click)="addToCart(product)">
+            <ion-icon style=" font-size: 25px;" name="cart" color="danger"></ion-icon>
+        </button>
+      </ion-item>
+  </ion-list>
+
+
+
+  
+</ion-content>

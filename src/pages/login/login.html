@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  padding>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col width-67>
+        <img src="../assets/icon/icon.png"/>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <div >
+      <form  #registerForm="ngForm">
+        <ion-row>
+          <ion-col>
+            <ion-list inset>
+              
+              <ion-item>
+                <ion-input [(ngModel)]="email" type="text" placeholder="Email" name="email" required></ion-input>
+              </ion-item>
+              
+              <ion-item>
+                <ion-input [(ngModel)]="password" type="password" placeholder="Password" name="password" required></ion-input>
+              </ion-item>
+              
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col class="signup-col">
+            <button ion-button color="dark" full (click)="login()" >Login</button>
+            <button ion-button block color="login_pasive_button" outline (click)="createAccount()" >Create New Account</button>
+            <button ion-button block color="login_pasive_button" clear (click)="resetPassword()" >Reset Password</button>
+          </ion-col>
+        </ion-row>
+        
+      </form>
+    </div>
+  </ion-content>

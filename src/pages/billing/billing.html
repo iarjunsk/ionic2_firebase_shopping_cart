@@ -1,0 +1,55 @@
+
+<ion-header>
+
+    <ion-navbar color="dark">
+        <ion-title><ion-icon name="ios-card"></ion-icon> Billing </ion-title>
+
+        <ion-buttons end>
+            <button ion-button icon-left (click)="addAddress()">
+                <ion-icon name="ios-create"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+    <ion-list radio-group [(ngModel)]="payment_mode">
+        <ion-item-divider color="light">Payment Mode</ion-item-divider>
+        <ion-item>
+            <ion-label>Cash on delivery</ion-label>
+            <ion-radio checked="true" value="cod"></ion-radio>
+        </ion-item>
+
+    </ion-list>
+
+
+    <ion-list radio-group  [(ngModel)]="delivery_details">
+        <ion-item-divider color="light">Delivery Details</ion-item-divider>
+        
+        <ion-item-sliding *ngFor="let address of addresses | async">
+                <ion-item>
+                    <ion-label>  
+                        <h2> <b>{{address.nickname}}</b></h2>
+                        <h3>{{address.address}}</h3>
+                        <p>Pin : {{address.pincode}} </p>
+                        <p>Phone  : {{address.phone}} </p>
+                    </ion-label>
+                    <ion-radio value="{{address.address + ' Pin: ' + address.pincode + ' Phone : ' + address.phone}}"></ion-radio>
+                </ion-item>
+                <ion-item-options side="right">
+                    <button ion-button color="primary" (click)="editAddress(address)" > <ion-icon name="md-create"></ion-icon> Edit </button>
+                    <button ion-button color="danger"  (click)="deleteAddress(address)"> <ion-icon name="ios-trash-outline"></ion-icon> Delete </button>
+                </ion-item-options>
+            </ion-item-sliding>
+
+    </ion-list>
+
+    <button ion-button icon-left block color="secondary" (click)="pay()">
+            <ion-icon name="logo-usd"></ion-icon> Pay
+    </button>
+
+</ion-content>

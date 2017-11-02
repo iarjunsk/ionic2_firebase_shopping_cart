@@ -1,0 +1,31 @@
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>
+      <ion-icon name="md-checkbox-outline"></ion-icon> Product
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-style"  >
+
+    <ion-card *ngIf='product'>
+      <ion-card-header>  
+        <img src={{product.image}}/>
+      </ion-card-header>
+
+
+      <ion-card-content>
+        <h2> <b>{{product.name}} </b> </h2>
+        <p> {{product.description}} </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-fab right bottom (click)="addToCart()">
+      <button ion-fab color="danger"><ion-icon name="ios-cart" ></ion-icon></button>
+    </ion-fab>
+
+</ion-content>

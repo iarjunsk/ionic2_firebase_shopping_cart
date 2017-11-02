@@ -13,9 +13,9 @@
 
 3. Enable Email authentication. [__DEMO](/DEMO/demo_email_auth.png)
 
-4. Import the data into database using [this json](/FIREBASE_DATA/dekene-export.json). [__DEMO](/DEMO/demo_import_json.png)
+4. Import the data into firebase database using [this json](/FIREBASE_DATA/dekene-export.json). [__DEMO](/DEMO/demo_import_json.png)
 
-5. Update Security rules to [__DEMO](/DEMO/demo_database_rules.png)
+5. Update Security rules  [__DEMO](/DEMO/demo_database_rules.png)
 ```bash
 {
   "rules": {

@@ -15,16 +15,6 @@
 
 4. Import the data into firebase database using [this json](/FIREBASE_DATA/dekene-export.json). [__DEMO](/DEMO/demo_import_json.png)
 
-5. Update Security rules  [__DEMO](/DEMO/demo_database_rules.png)
-```bash
-{
-  "rules": {
-   	".read": true,
-  	".write": true
-  }
-}
-```
-
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
 </a>

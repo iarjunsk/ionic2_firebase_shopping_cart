@@ -17,12 +17,20 @@ export class CartService {
   loadCartList(userid : string)  {
      this.cartItems = this.db.list('cart/'+userid);
 
-     this.cartItems.subscribe(rows => {
-        this.cartAmount  = 0;
-        rows.forEach(row => { 
-          this.cartAmount = this.cartAmount + (row.quantity*row.price);
-        });
-    });
+     this.cartItems.subscribe(
+        (rows) => {
+          this.cartAmount  = 0;
+          rows.forEach(row => { 
+            this.cartAmount = this.cartAmount + (row.quantity*row.price);
+          });
+        },
+        (err) => {
+          console.log('not authenticated');
+        },
+        () => { 
+          console.log('done.');
+        }
+	  );
 
   };
 

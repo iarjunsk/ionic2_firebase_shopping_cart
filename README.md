@@ -5,19 +5,11 @@
 
 1. Create a firebase project [here](https://console.firebase.google.com/).
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
-</a>
-
 2. Enter the project credentials in [this file](/src/app/app.module.ts). [__DEMO](/DEMO/demo_firebase_cred.png)
 
 3. Enable Email authentication. [__DEMO](/DEMO/demo_email_auth.png)
 
 4. Import the data into firebase database using [this json](/FIREBASE_DATA/dekene-export.json). [__DEMO](/DEMO/demo_import_json.png)
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
-</a>
 
 5. Run the following the terminal
 
@@ -34,9 +26,6 @@ $ ionic serve
 
 
 ### DEMO
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/kpPTfcZs2AmDLYbvJ42HTnR3/arjunsk/ionic2_firebase_shopping_cart.svg' />
-</a>
 
 ![FoodKart ](/DEMO/ionic2_shopping_cart.gif)
 
